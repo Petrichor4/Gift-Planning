@@ -1,0 +1,56 @@
+@font-face {font-family: vollkorn;src: url(vollkorn/Vollkorn-Regular.ttf);}
+header {
+    height: 100px;
+    width: 100%;
+    font-size: 26px;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    background-image: url("background.webp");
+    background-position:0 -65px;
+    filter: drop-shadow(3px 3px 3px #363637);}
+main {
+    display: flex;
+    font-family: vollkorn;
+}
+h1 {
+    font-family: cursive;
+    color:white;
+    justify-self: center;
+    align-self: center;
+    text-shadow: 1px 1px 2px black;
+}
+h2 {
+    font-size: xx-large;
+    justify-self: center;
+}
+nav {
+    height: 10px;
+    background-color: red;
+}
+#left {
+    max-height: 100px;
+    width: auto;
+}
+#right {
+    max-height: 100px;
+    width: auto;
+    order: 2;
+}
+@media (max-width:1044px) {
+    header {
+        height: 200px;
+        display: block;
+    }
+    #left {
+        display: inline;
+    }
+    #right {
+        display: none;
+    }
+    h1 {
+        display: block;
+        font-size: 180%;
+    }
+}
