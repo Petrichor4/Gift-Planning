@@ -1,4 +1,22 @@
-@font-face {font-family: vollkorn;src: url(vollkorn/Vollkorn-Regular.ttf);}
+@font-face {font-family: vollkorn;src: url(./vollkorn/Vollkorn-Regular.ttf);}
+@font-face {font-family:SF; src: url(./SFProDisplay-Regular.ttf);}
+
+* {
+    font-family: vollkorn;
+}
+
+body {
+    background-image: url(./background.webp);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+main {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 header {
     height: 100px;
     width: 100%;
@@ -6,32 +24,39 @@ header {
     text-align: center;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-image: url("background.webp");
     background-position:0 -65px;
     filter: drop-shadow(3px 3px 3px #363637);}
-main {
-    display: flex;
-    font-family: vollkorn;
-}
+    .Images {
+        width: 400px;
+        height: 1000px;
+    }
+    .notes {
+        background-color: white;
+        border-radius: 5px;
+        height: 300px;
+        width: 600px;
+        min-width: 200px;
+    }
 h1 {
-    font-family: cursive;
     color:white;
+    display: block;
     justify-self: center;
     align-self: center;
     text-shadow: 1px 1px 2px black;
 }
 h2 {
+    border-radius: 10px;
+    filter: drop-shadow(3px 3px 3px #363637);
+    background-color: rgb(27, 1, 197);
+    color: white;
     font-size: xx-large;
-    justify-self: center;
+    text-align: center;
 }
 nav {
     height: 10px;
     background-color: red;
-}
-#left {
-    max-height: 100px;
-    width: auto;
 }
 #right {
     max-height: 100px;
