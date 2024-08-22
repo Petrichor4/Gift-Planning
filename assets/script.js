@@ -1,8 +1,13 @@
 const notes = document.querySelector("ol");
+const input = document.querySelector("input");
+let li = document.createElement("li")
 
-ol.addEventListener('keyup', persist);
+notes.innerHTML = localStorage.getItem('value');
+
+input.addEventListener('keyup', persist);
 
 function persist() {
-    localStorage.setItem('value', notes.value);
-    console.log( localStorage.getItem('value'));
+    localStorage.setItem('value', input.value);
+    console.log(localStorage.getItem('value'))
+    notes.innerHTML = localStorage.getItem('value');
 }
