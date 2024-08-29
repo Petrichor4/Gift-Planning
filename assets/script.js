@@ -1,5 +1,5 @@
 const notes = document.querySelector("ol");
-const input = document.querySelector("input");
+const input = document.querySelector("textarea");
 let li = document.createElement("li")
 
 notes.innerHTML = localStorage.getItem('value');
